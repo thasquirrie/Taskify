@@ -144,6 +144,8 @@ Response:
 }
 ```
 
+### Get A Task
+
 GET /api/task/:taskId
 Description: Get a single task for a user.
 
@@ -218,6 +220,7 @@ Request:
 Pass the key and value of what you want to change. For example {
 "status": "completed"
 }
+
 PATCH /api/v1/tasks/6572b97ac590a0bd98ec14dc
 
 Content-Type: application/json
