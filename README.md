@@ -69,14 +69,18 @@ Request:
 
 Content-Type: application/json
 
+```bash
 {
 "name": "New User",
 "email": "newuser@example.com",
 "password": "test"
 }
 
+```
+
 Response:
 
+```bash
 {
 "status": "success",
 "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NzI4ZjlmYzMxNmQ3ZmNiOTBhNTQ5NiIsImlhdCI6MTcwMjAwNjY4NywiZXhwIjoxNzA5NzgyNjg3fQ.nszc3pAe0AEUDkB9wFK7JpauJ7tRaLDC4ZKSINxjsWo",
@@ -86,8 +90,7 @@ Response:
 "name": null,
 "email": "thasquirrie1@gmail.com"
 }
-}
-}
+```
 
 GET /api/tasks
 Description: Get a list of all tasks for a user.
