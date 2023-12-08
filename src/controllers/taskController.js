@@ -6,6 +6,7 @@ const colors = require('colors');
 exports.getUserTasks = catchAsync(async (req, res, next) => {
   const { id } = req.user;
 
+  console.log({ id });
   const tasks = await prisma.task.findMany({
     where: {
       userId: id,
@@ -56,6 +57,7 @@ exports.createTask = catchAsync(async (req, res, next) => {
       title,
       description,
       userId: id,
+      status: 'pending',
     },
   });
 
