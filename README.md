@@ -1,4 +1,5 @@
 # Taskify
+
 # Project Name
 
 Brief description of your project.
@@ -10,11 +11,6 @@ Brief description of your project.
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Configuration](#configuration)
-- [Usage](#usage)
-- [Folder Structure](#folder-structure)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
@@ -38,9 +34,26 @@ List any software or tools that need to be installed before setting up the proje
    ```bash
    git clone https://github.com/your-username/your-project.git
 
-2. Install dependencies
-    ```bash
-    cd taskify
-    npm install or yarn
+   ```
 
-    
+2. Install dependencies
+
+   ```bash
+   cd taskify
+   npm install or yarn
+   ```
+
+### Configuration
+
+1. Create a .env file in the root of your project
+2. Populate it with the corresponding values
+
+   ```bash
+   DATABASE_URL=
+   JWT_SECRET=
+   JWT_EXPIRES_IN=
+   JWT_COOKIES_EXPIRES_IN=
+   NODE_ENV=
+   PORT=
+
+   ```

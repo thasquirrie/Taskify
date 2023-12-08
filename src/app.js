@@ -30,14 +30,6 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 // app.use('uploads', express.static(path.join(__dirname, 'uploads')));
-console.log('Yeah');
-
-// app.get('/', (req, res) => {
-//   res.json({
-//     success: true,
-//     data: '',
-//   });
-// });
 
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/tasks', taskRouter);

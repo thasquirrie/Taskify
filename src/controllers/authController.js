@@ -8,7 +8,6 @@ const prisma = require('../../prisma/index');
 
 const signToken = (id) => {
   expiresIn = process.env.JWT_EXPIRES_IN;
-  console.log({ expiresIn, id });
   return jwt.sign({ id: id }, process.env.JWT_SECRET, {
     expiresIn: process.env.JWT_EXPIRES_IN,
   });
@@ -59,8 +58,6 @@ exports.signup = catchAsync(async (req, res, next) => {
     },
   });
 
-  console.log({ user });
-
   user.password = undefined;
 
   createSignedToken(user, 200, req, res);
@@ -77,8 +74,6 @@ exports.login = catchAsync(async (req, res, next) => {
       email,
     },
   });
-
-  console.log({ user });
 
   if (!user || !(await comparePasswords(password, user.password)))
     return next(new AppError('Invalid login credentials', 401));

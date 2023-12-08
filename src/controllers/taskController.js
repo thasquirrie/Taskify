@@ -24,8 +24,6 @@ exports.getUserTasks = catchAsync(async (req, res, next) => {
 exports.getTask = catchAsync(async (req, res, next) => {
   const { taskId } = req.params;
 
-  console.log({ taskId });
-
   const task = await prisma.task.findUnique({
     where: {
       id: taskId,
@@ -76,8 +74,6 @@ exports.updateTask = catchAsync(async (req, res, next) => {
     where: { id: taskId },
     data: req.body,
   });
-
-  console.log(task);
 
   res.status(200).json({
     status: 'success',
