@@ -11,16 +11,15 @@ Brief description of your project.
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Configuration](#configuration)
+- [Usage](#usage)
 
 ## Overview
 
-Provide a brief overview of your project. What does it do? Why is it useful?
+Taskify is a backend application where authenticated users are allowed create, read, update, delete tasks.
 
 ## Getting Started
 
 ### Prerequisites
-
-List any software or tools that need to be installed before setting up the project.
 
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/)
@@ -32,7 +31,7 @@ List any software or tools that need to be installed before setting up the proje
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-project.git
+   git clone https://github.com/thasquirrie/taskify.git
 
    ```
 
@@ -57,3 +56,11 @@ List any software or tools that need to be installed before setting up the proje
    PORT=
 
    ```
+
+## Usage
+
+From the root of the project in your terminal run the code below to start the project
+
+```bash
+  npm start dev or yarn dev
+```
